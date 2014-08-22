@@ -1,6 +1,6 @@
 package br.com.matriz;
 
-public class Teste {
+public class CalculaMatriz {
 
 	public static void main(String[] args) {
 		MatrizStrategy strategy = MatrizStrategyFactory
