@@ -2,7 +2,7 @@ package br.com.matriz;
 
 import javax.swing.JOptionPane;
 
-public class MatrizImpl implements Matriz {
+public class MontaMatriz implements Matriz {
 	private int[][] mat;
 
 	private int linha;
@@ -12,37 +12,23 @@ public class MatrizImpl implements Matriz {
 
 	private String nome;
 
-	public MatrizImpl(String nome) {
-		this.nome = nome;
+	public MontaMatriz(MatrizBuilder matriz) {
+		this.nome = matriz.nome;
 	}
 
-	public MatrizImpl() {
-		super();
-
-	}
-
+	@Override
 	public int getLinha() {
 		return linha;
 	}
 
-	public void setLinha(int linha) {
-		this.linha = linha;
-	}
-
+	@Override
 	public int getColuna() {
 		return coluna;
 	}
 
-	public void setColuna(int coluna) {
-		this.coluna = coluna;
-	}
-
+	@Override
 	public int[][] getMat() {
 		return mat;
-	}
-
-	public void setMat(int[][] mat) {
-		this.mat = mat;
 	}
 
 	@Override
@@ -71,9 +57,7 @@ public class MatrizImpl implements Matriz {
 			valorMatriz();
 		}
 
-
 	}
-
 
 	@Override
 	public void tamanhoMatriz() {
@@ -85,6 +69,7 @@ public class MatrizImpl implements Matriz {
 
 	}
 
+	@Override
 	public void linhaMatriz() {
 		try {
 			linha = Integer.parseInt(JOptionPane
@@ -103,6 +88,7 @@ public class MatrizImpl implements Matriz {
 
 	}
 
+	@Override
 	public void colunaMatriz() {
 		try {
 			coluna = Integer.parseInt(JOptionPane
