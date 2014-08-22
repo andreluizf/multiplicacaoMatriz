@@ -2,16 +2,7 @@ package br.com.matriz;
 
 import javax.swing.JOptionPane;
 
-public class MontaMatriz implements Matriz {
-	private int[][] mat;
-
-	private int linha;
-	private int coluna;
-	private int l = 0;
-	private int c = 0;
-
-	private String nome;
-
+public class MontaMatriz extends MontaMatrizData implements Matriz {
 	public MontaMatriz(MatrizBuilder matriz) {
 		this.nome = matriz.nome;
 	}
