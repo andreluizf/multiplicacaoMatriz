@@ -1,9 +1,9 @@
 package br.com.matriz;
 
 public class MatrizStrategy {
-	private Resultado resultado;
+	private ResultadoMatriz resultado;
 
-	public MatrizStrategy(Resultado result) {
+	public MatrizStrategy(ResultadoMatriz result) {
 		super();
 		this.resultado = result;
 	}

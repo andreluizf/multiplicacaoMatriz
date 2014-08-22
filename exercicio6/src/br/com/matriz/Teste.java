@@ -4,7 +4,7 @@ public class Teste {
 
 	public static void main(String[] args) {
 		MatrizStrategy strategy = MatrizStrategyFactory
-				.createMatrizStrategy("multiplicacao");
+				.createMatrizStrategy(new Multiplicacao());
 		strategy.montar();
 		strategy.resultado();
 	}

@@ -2,7 +2,7 @@ package br.com.matriz;
 
 import javax.swing.JOptionPane;
 
-public class Multiplicacao implements Resultado {
+public class Multiplicacao implements ResultadoMatriz {
 	int[][] result;
 	int aux = 0;
 	Matriz mat1;

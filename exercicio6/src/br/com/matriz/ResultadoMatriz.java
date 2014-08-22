@@ -1,6 +1,6 @@
 package br.com.matriz;
 
-public interface Resultado {
+public interface ResultadoMatriz {
 	void imprimeResult();
 	void montaMatriz();
 }
